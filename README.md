@@ -1,4 +1,4 @@
-# SQLCMD-Go with Scratch
+# Sqlcmd-Go with Scratch
 
 Are you in need of a compact `SQLCMD` (Go) container image? Look no further than `sqlcmd-go-scratch`. With a size of approximately 19 MB, this image offers the portability and flexibility required for executing queries using `SQLCMD` seamlessly within containers.
 
@@ -9,12 +9,12 @@ Are you in need of a compact `SQLCMD` (Go) container image? Look no further than
 docker build . -t sqlcmd-go-scratch
 ````
 
-### Checking SQLCMD help
+### Checking `SQLCMD` help
 ```docker
 docker container run --rm -it mssql-tools-alpine sqlcmd --help
 ```
 
-### Using SQLCMD through local network
+### Using `SQLCMD` through local network
 ```docker
 docker container run -it --network host sqlcmd-go-scratch sqlcmd -S <HOSTNAME|PORT> -U <USER> -P <PASSWORD>
 ```
